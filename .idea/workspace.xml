@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c9bcf99-28ca-447a-8f09-fda9ed82d6be" name="Changes" comment="AddPoster and test for it" />
+    <list default="true" id="4c9bcf99-28ca-447a-8f09-fda9ed82d6be" name="Changes" comment="Coveredratio for jacoco set to 100%&#10;All test done.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/netology/afisha/PosterItemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/afisha/Poster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/afisha/Poster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/afisha/PosterItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/afisha/PosterItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/afisha/PosterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/afisha/PosterTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +65,44 @@
       <recent name="ru.netology.afisha" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean verify" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.PosterItemTest.getReleaseYearTest">
+    <configuration name="PosterItemTest.getReleaseYearTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Javaqamvn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.afisha.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.afisha" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterItemTest" />
+      <option name="METHOD_NAME" value="getReleaseYearTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PosterItemTest.setFilmNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Javaqamvn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.afisha.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.afisha" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterItemTest" />
+      <option name="METHOD_NAME" value="setFilmNameTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PosterTest.addPosterItemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Javaqamvn" />
       <extension name="coverage">
@@ -75,9 +119,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PosterTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Javaqamvn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.afisha.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.afisha" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterTest" />
+      <option name="METHOD_NAME" value="findAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PosterTest.findLastTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Javaqamvn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.afisha.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.afisha" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterTest" />
+      <option name="METHOD_NAME" value="findLastTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PosterItemTest.getReleaseYearTest" />
+        <item itemvalue="JUnit.PosterItemTest.setFilmNameTest" />
+        <item itemvalue="JUnit.PosterTest.findLastTest" />
         <item itemvalue="JUnit.PosterTest.addPosterItemTest" />
+        <item itemvalue="JUnit.PosterTest.findAll" />
       </list>
     </recent_temporary>
   </component>
@@ -104,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677849712161</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Coveredratio for jacoco set to 10%">
+      <created>1677850435286</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677850435286</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,6 +208,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="AddPoster and test for it" />
-    <option name="LAST_COMMIT_MESSAGE" value="AddPoster and test for it" />
+    <MESSAGE value="Coveredratio for jacoco set to 10%" />
+    <MESSAGE value="Coveredratio for jacoco set to 100%&#10;All test done." />
+    <option name="LAST_COMMIT_MESSAGE" value="Coveredratio for jacoco set to 100%&#10;All test done." />
   </component>
 </project>

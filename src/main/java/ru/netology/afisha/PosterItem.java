@@ -8,6 +8,7 @@ public class PosterItem {
   public PosterItem(int id, String filmName, int releaseYear) {
     this.id = id;
     this.filmName = filmName;
+    this.releaseYear = releaseYear;
   }
 
   public int getId() {
@@ -38,7 +39,7 @@ public class PosterItem {
     if (releaseYear > 1900 && releaseYear < 2050) {
       this.releaseYear = releaseYear;
     } else {
-      this.releaseYear = 1900;
+      this.releaseYear = 0;
     }
   }
 }
