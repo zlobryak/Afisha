@@ -1,13 +1,14 @@
 package ru.netology.afisha;
 
-public class Poster {
+public class PosterRepisitory {
   private PosterItem[] items = new PosterItem[0];
   private int resultLenght;
 
   public int getResultLenght() {
     return resultLenght;
   }
-  public Poster(int resultLenght) {
+
+  public PosterRepisitory(int resultLenght) {
     if (resultLenght > 0) {
       this.resultLenght = resultLenght;
     } else {
