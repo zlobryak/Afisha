@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c9bcf99-28ca-447a-8f09-fda9ed82d6be" name="Changes" comment="Coveredratio for jacoco set to 100%&#10;All test done.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/afisha/PosterManager.java" afterDir="false" />
+    <list default="true" id="4c9bcf99-28ca-447a-8f09-fda9ed82d6be" name="Changes" comment="removeAll, removeById, findById and test added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/afisha/Poster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/afisha/PosterRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/afisha/PosterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/afisha/PosterRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +199,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677862045834</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="removeAll, removeById, findById and test added">
+      <created>1677958251460</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677958251460</updated>
+    </task>
+    <task id="LOCAL-00006" summary="removeAll, removeById, findById and test added">
+      <created>1677958452181</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677958452181</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,7 +232,8 @@
     <MESSAGE value="AddPoster and test for it" />
     <MESSAGE value="Coveredratio for jacoco set to 10%" />
     <MESSAGE value="Coveredratio for jacoco set to 100%&#10;All test done." />
-    <option name="LAST_COMMIT_MESSAGE" value="Coveredratio for jacoco set to 100%&#10;All test done." />
+    <MESSAGE value="removeAll, removeById, findById and test added" />
+    <option name="LAST_COMMIT_MESSAGE" value="removeAll, removeById, findById and test added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
