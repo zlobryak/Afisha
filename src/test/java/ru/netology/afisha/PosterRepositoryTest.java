@@ -1,6 +1,7 @@
 package ru.netology.afisha;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class PosterRepositoryTest {
@@ -19,14 +20,26 @@ class PosterRepositoryTest {
   PosterItem item12 = new PosterItem(12, "Матрица ", 1999);
   PosterItem item13 = new PosterItem(13, "Крестный отец", 1972);
 
-
+@BeforeEach
+public void setup(){
+  repo.save(item1);
+  repo.save(item2);
+  repo.save(item3);
+  repo.save(item4);
+  repo.save(item5);
+  repo.save(item6);
+  repo.save(item7);
+  repo.save(item8);
+  repo.save(item9);
+  repo.save(item10);
+  repo.save(item11);
+  repo.save(item12);
+  repo.save(item13);
+}
   @Test
   void addPosterItemTest() {
-    repo.save(item1);
-    repo.save(item2);
-    repo.save(item3);
 
-    PosterItem[] expected = {item1, item2, item3};
+    PosterItem[] expected = { item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, item12, item13 };
     PosterItem[] actual = repo.findAll();
 
     Assertions.assertArrayEquals(expected, actual);
@@ -34,21 +47,6 @@ class PosterRepositoryTest {
 
   @Test
   void findLastTest() {
-    repo.save(item1);
-    repo.save(item2);
-    repo.save(item3);
-    repo.save(item4);
-    repo.save(item5);
-    repo.save(item6);
-    repo.save(item7);
-    repo.save(item8);
-    repo.save(item9);
-    repo.save(item10);
-    repo.save(item11);
-    repo.save(item12);
-    repo.save(item13);
-
-
     PosterItem[] expected = {item10, item9, item8, item7, item6, item5, item4, item3, item2, item1};
     PosterItem[] actual = repo.findLast();
 
@@ -68,56 +66,25 @@ class PosterRepositoryTest {
 
   @Test
   void findByIdTest() {
-    repo.save(item1);
-    repo.save(item2);
-    repo.save(item3);
-    repo.save(item4);
-    repo.save(item5);
-    repo.save(item6);
-    repo.save(item7);
-    repo.save(item8);
-    repo.save(item9);
-    repo.save(item10);
-    repo.save(item11);
-    repo.save(item12);
-    repo.save(item13);
-
     Assertions.assertEquals(item5, repo.findById(5));
   }
   @Test
   void findByIdNullTest() {
-    repo.save(item1);
-    repo.save(item2);
-    repo.save(item3);
-    repo.save(item4);
-    repo.save(item5);
-    repo.save(item6);
-    repo.save(item7);
-    repo.save(item8);
-    repo.save(item9);
-
-    Assertions.assertNull(repo.findById(13));
+    Assertions.assertNull(repo.findById(14));
   }
 
   @Test
   void removeByIdTest() {
-    repo.save(item1);
-    repo.save(item2);
-    repo.save(item3);
     repo.removeById(2);
-
-    PosterItem[] expected = {item1, item3};
+    PosterItem[] expected = {item1, item3, item4, item5, item6, item7, item8, item9, item10, item11, item12, item13};
     PosterItem[] actual = repo.findAll();
     Assertions.assertArrayEquals(expected, actual);
   }
 
   @Test
   void removeAllTest() {
-    repo.save(item1);
-    repo.save(item2);
-    repo.save(item3);
     repo.removeAll();
     PosterItem[] expected = new PosterItem[0];
-    Assertions.assertArrayEquals( expected, repo.findAll());
+    Assertions.assertArrayEquals(expected, repo.findAll());
   }
 }
