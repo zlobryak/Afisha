@@ -74,17 +74,34 @@ class PosterRepositoryTest {
     repo.save(item7);
     repo.save(item8);
     repo.save(item9); //Задаем 9 итемов
-    PosterItem[] expected = { item9, item8, item7, item6, item5, item4, item3, item2, item1};
+    PosterItem[] expected = {item9, item8, item7, item6, item5, item4, item3, item2, item1};
     PosterItem[] actual = repo.findLast();
 
     Assertions.assertArrayEquals(expected, actual);
   }
+
   @Test
-  void findLastWhenNoItemsTest(){
+  void findLastWhenNoItemsTest() {
     Poster repo = new Poster(10);
     PosterItem[] expected = new PosterItem[0];
     Assertions.assertArrayEquals(expected, repo.findLast());
+  }
 
+  @Test
+  void findLastWhenEquals() {
+    Poster repo = new Poster(10);
+    repo.save(item1);
+    repo.save(item2);
+    repo.save(item3);
+    repo.save(item4);
+    repo.save(item5);
+    repo.save(item6);
+    repo.save(item7);
+    repo.save(item8);
+    repo.save(item9);
+    repo.save(item10);
+    PosterItem[] expected = {item10, item9, item8, item7, item6, item5, item4, item3, item2, item1};
+    Assertions.assertArrayEquals(expected, repo.findLast());
   }
 
   @Test
@@ -119,5 +136,4 @@ class PosterRepositoryTest {
     Poster poster = new Poster(-1);
     Assertions.assertEquals(10, poster.getResultLenght());
   }
-
 }
