@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c9bcf99-28ca-447a-8f09-fda9ed82d6be" name="Changes" comment="Coveredratio for jacoco set to 100%&#10;All test done.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/netology/afisha/PosterItemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/afisha/Poster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/afisha/Poster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/afisha/PosterItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/afisha/PosterItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/afisha/PosterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/afisha/PosterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/afisha/PosterManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/afisha/PosterManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/afisha/PosterRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/afisha/PosterRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/afisha/PosterManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/afisha/PosterManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/afisha/PosterRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/afisha/PosterRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +27,25 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="layers" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="99413faa-4d55-4322-9323-a8848b1b9247" />
+        <option name="url" value="https://github.com/zlobryak/Afisha.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -48,13 +67,14 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "last_directory_selection": "D:/Netology/Java/Afisha/src/main/java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "Errors"
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -70,8 +90,8 @@
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PosterItemTest.getReleaseYearTest">
-    <configuration name="PosterItemTest.getReleaseYearTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PosterManagerTest.findByIdNullTest">
+    <configuration name="PosterManagerTest.findAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Javaqamvn" />
       <extension name="coverage">
         <pattern>
@@ -80,14 +100,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.afisha" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterItemTest" />
-      <option name="METHOD_NAME" value="getReleaseYearTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterManagerTest" />
+      <option name="METHOD_NAME" value="findAllTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PosterItemTest.setFilmNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PosterManagerTest.findById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Javaqamvn" />
       <extension name="coverage">
         <pattern>
@@ -96,14 +116,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.afisha" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterItemTest" />
-      <option name="METHOD_NAME" value="setFilmNameTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterManagerTest" />
+      <option name="METHOD_NAME" value="findById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PosterTest.addPosterItemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PosterManagerTest.findByIdNullTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Javaqamvn" />
       <extension name="coverage">
         <pattern>
@@ -112,14 +132,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.afisha" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterTest" />
-      <option name="METHOD_NAME" value="addPosterItemTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterManagerTest" />
+      <option name="METHOD_NAME" value="findByIdNullTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PosterTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PosterManagerTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Javaqamvn" />
       <extension name="coverage">
         <pattern>
@@ -128,14 +148,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.afisha" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterTest" />
-      <option name="METHOD_NAME" value="findAll" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterManagerTest" />
+      <option name="METHOD_NAME" value="save" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PosterTest.findLastTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PosterRepositoryTest.findByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Javaqamvn" />
       <extension name="coverage">
         <pattern>
@@ -144,8 +164,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.afisha" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterTest" />
-      <option name="METHOD_NAME" value="findLastTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterRepositoryTest" />
+      <option name="METHOD_NAME" value="findByIdTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -153,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PosterItemTest.getReleaseYearTest" />
-        <item itemvalue="JUnit.PosterItemTest.setFilmNameTest" />
-        <item itemvalue="JUnit.PosterTest.findLastTest" />
-        <item itemvalue="JUnit.PosterTest.addPosterItemTest" />
-        <item itemvalue="JUnit.PosterTest.findAll" />
+        <item itemvalue="JUnit.PosterManagerTest.findByIdNullTest" />
+        <item itemvalue="JUnit.PosterManagerTest.findById" />
+        <item itemvalue="JUnit.PosterManagerTest.findAllTest" />
+        <item itemvalue="JUnit.PosterRepositoryTest.findByIdTest" />
+        <item itemvalue="JUnit.PosterManagerTest.save" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +211,28 @@
       <option name="project" value="LOCAL" />
       <updated>1677850435286</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Coveredratio for jacoco set to 100%&#10;All test done.">
+      <created>1677862045834</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677862045834</updated>
+    </task>
+    <task id="LOCAL-00005" summary="removeAll, removeById, findById and test added">
+      <created>1677958251460</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677958251460</updated>
+    </task>
+    <task id="LOCAL-00006" summary="removeAll, removeById, findById and test added">
+      <created>1677958452181</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677958452181</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,6 +251,33 @@
     <MESSAGE value="AddPoster and test for it" />
     <MESSAGE value="Coveredratio for jacoco set to 10%" />
     <MESSAGE value="Coveredratio for jacoco set to 100%&#10;All test done." />
-    <option name="LAST_COMMIT_MESSAGE" value="Coveredratio for jacoco set to 100%&#10;All test done." />
+    <MESSAGE value="removeAll, removeById, findById and test added" />
+    <option name="LAST_COMMIT_MESSAGE" value="removeAll, removeById, findById and test added" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/netology/afisha/PosterRepository.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/netology/afisha/PosterManager.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/netology/afisha/PosterManagerTest.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/netology/afisha/PosterManager.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

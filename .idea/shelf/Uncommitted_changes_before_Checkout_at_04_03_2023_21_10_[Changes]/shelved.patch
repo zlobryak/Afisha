@@ -1,0 +1,60 @@
+Index: src/main/java/ru/netology/afisha/PosterManager.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package ru.netology.afisha;\r\n\r\npublic class PosterManager {\r\n  private PosterRepisitory repo;\r\n  public PosterManager(PosterRepisitory repo){\r\n    this.repo = repo;\r\n  }\r\n\r\n  public PosterItem[] findAll() {\r\n    PosterItem[] tmp = new PosterItem[repo.items.length];\r\n    tmp = repo.findAll();\r\n    return tmp[0];\r\n\r\n  }\r\n\r\n  public void save() {\r\n\r\n  }\r\n\r\n  public PosterItem[] findById() {\r\n\r\n  }\r\n\r\n  public void removeById() {\r\n\r\n  }\r\n\r\n  public void removeAll() {\r\n\r\n  }\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/ru/netology/afisha/PosterManager.java b/src/main/java/ru/netology/afisha/PosterManager.java
+--- a/src/main/java/ru/netology/afisha/PosterManager.java	
++++ b/src/main/java/ru/netology/afisha/PosterManager.java	
+@@ -1,31 +1,33 @@
+ package ru.netology.afisha;
+ 
+ public class PosterManager {
+-  private PosterRepisitory repo;
+-  public PosterManager(PosterRepisitory repo){
+-    this.repo = repo;
+-  }
++    private PosterRepisitory repo;
++
++    public PosterManager(PosterRepisitory repo) {
++        this.repo = repo;
++    }
+ 
+-  public PosterItem[] findAll() {
+-    PosterItem[] tmp = new PosterItem[repo.items.length];
+-    tmp = repo.findAll();
+-    return tmp[0];
++    public PosterItem[] findAll() {
++        PosterItem[] tmp = new PosterItem[];
++        tmp = repo.findAll();
++        return tmp[];
+ 
+-  }
++    }
+ 
+-  public void save() {
+-
+-  }
++    public void save(PosterItem item) {
++        repo.addPosterItem(item);
++    }
+ 
+-  public PosterItem[] findById() {
++    public PosterItem[] findById() {
+ 
+-  }
++    }
+ 
+-  public void removeById() {
++    public void removeById() {
+ 
+-  }
++    }
+ 
+-  public void removeAll() {
++    public void removeAll() {
++        PosterItem[] empty = new PosterItem[0];
+ 
+-  }
++    }
+ }

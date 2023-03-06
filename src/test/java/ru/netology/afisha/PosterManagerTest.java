@@ -2,9 +2,15 @@ package ru.netology.afisha;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
 
-class PosterTest {
-  Poster poster = new Poster(10);
+import static org.mockito.Mockito.*;
+
+
+class PosterManagerTest {
+  private PosterRepository repo = Mockito.mock(PosterRepository.class);
+  private PosterManager manage = new PosterManager(repo);
+
   PosterItem item1 = new PosterItem(1, "Спайдерхед", 2022);
   PosterItem item2 = new PosterItem(2, "Властелин колец 3: Возвращение Короля", 2003);
   PosterItem item3 = new PosterItem(3, "Терминатор 2: Судный день", 1991);
@@ -18,51 +24,28 @@ class PosterTest {
   PosterItem item11 = new PosterItem(11, "Зеленая миля ", 1999);
   PosterItem item12 = new PosterItem(12, "Матрица ", 1999);
   PosterItem item13 = new PosterItem(13, "Крестный отец", 1972);
-
+  PosterItem[] items = {item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, item12, item13};
 
   @Test
-  void addPosterItemTest() {
-    poster.addPosterItem(item1);
-    poster.addPosterItem(item2);
-    poster.addPosterItem(item3);
-
-    PosterItem[] expected = {item1, item2, item3};
-    PosterItem[] actual = poster.findAll();
-
-    Assertions.assertArrayEquals(expected, actual);
+  void findAllTest() {
+    doReturn(items).when(repo).findAll();
+    PosterItem[] actual = manage.findAll();
+    Assertions.assertArrayEquals(items, actual);
   }
 
   @Test
-  void findLastTest() {
-    poster.addPosterItem(item1);
-    poster.addPosterItem(item2);
-    poster.addPosterItem(item3);
-    poster.addPosterItem(item4);
-    poster.addPosterItem(item5);
-    poster.addPosterItem(item6);
-    poster.addPosterItem(item7);
-    poster.addPosterItem(item8);
-    poster.addPosterItem(item9);
-    poster.addPosterItem(item10);
-    poster.addPosterItem(item11);
-    poster.addPosterItem(item12);
-    poster.addPosterItem(item13);
-
-
-    PosterItem[] expected = {item10, item9, item8, item7, item6, item5, item4, item3, item2, item1};
-    PosterItem[] actual = poster.findLast();
-
-    Assertions.assertArrayEquals(expected, actual);
+  void findByIdTest() {
+    doReturn(items).when(repo).findAll();
+    PosterItem expexted = item2;
+    PosterItem actual = manage.findById(2);
+    Assertions.assertEquals(expexted, actual);
   }
 
   @Test
-  void getResultLenght() {
-    Assertions.assertEquals(10, poster.getResultLenght());
+  void findByIdNullTest() {
+    doReturn(items).when(repo).findAll();
+    PosterItem actual = manage.findById(14);
+    Assertions.assertNull(actual);
   }
 
-  @Test
-  void resultLenghtBelowTest() {
-    Poster poster = new Poster(-1);
-    Assertions.assertEquals(10, poster.getResultLenght());
-  }
 }
