@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c9bcf99-28ca-447a-8f09-fda9ed82d6be" name="Changes" comment="@BeforeEach added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/afisha/Poster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/afisha/Poster.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/afisha/PosterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/afisha/PosterTest.java" afterDir="false" />
     </list>
@@ -66,39 +67,7 @@
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PosterRepositoryTest.findLastTest">
-    <configuration name="PosterItemTest.getReleaseYearTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Javaqamvn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.afisha.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.afisha" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterItemTest" />
-      <option name="METHOD_NAME" value="getReleaseYearTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PosterItemTest.setFilmNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Javaqamvn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.afisha.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.afisha" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterItemTest" />
-      <option name="METHOD_NAME" value="setFilmNameTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PosterRepositoryTest.findLastWhenNoItemsTest">
     <configuration name="PosterRepositoryTest.findAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Javaqamvn" />
       <extension name="coverage">
@@ -110,22 +79,6 @@
       <option name="PACKAGE_NAME" value="ru.netology.afisha" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterRepositoryTest" />
       <option name="METHOD_NAME" value="findAllTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PosterRepositoryTest.findLastAnotherLenghtTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Javaqamvn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.afisha.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.afisha" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterRepositoryTest" />
-      <option name="METHOD_NAME" value="findLastAnotherLenghtTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,6 +100,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PosterRepositoryTest.findLastTestWhenLessItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Javaqamvn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.afisha.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.afisha" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterRepositoryTest" />
+      <option name="METHOD_NAME" value="findLastTestWhenLessItems" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PosterRepositoryTest.findLastWhenNoItemsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Javaqamvn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.afisha.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.afisha" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterRepositoryTest" />
+      <option name="METHOD_NAME" value="findLastWhenNoItemsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PosterRepositoryTest.findLastWhenNoItesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Javaqamvn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.afisha.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.afisha" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterRepositoryTest" />
+      <option name="METHOD_NAME" value="findLastWhenNoItesTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Javaqamvn" />
       <method v="2">
@@ -162,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PosterRepositoryTest.findLastWhenNoItemsTest" />
+        <item itemvalue="JUnit.PosterRepositoryTest.findLastWhenNoItesTest" />
+        <item itemvalue="JUnit.PosterRepositoryTest.findLastTestWhenLessItems" />
         <item itemvalue="JUnit.PosterRepositoryTest.findLastTest" />
         <item itemvalue="JUnit.PosterRepositoryTest.findAllTest" />
-        <item itemvalue="JUnit.PosterRepositoryTest.findLastAnotherLenghtTest" />
-        <item itemvalue="JUnit.PosterItemTest.getReleaseYearTest" />
-        <item itemvalue="JUnit.PosterItemTest.setFilmNameTest" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677850435286</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="@BeforeEach added">
+      <created>1678106134156</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678106134156</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -221,5 +229,16 @@
     <MESSAGE value="Coveredratio for jacoco set to 100%&#10;All test done." />
     <MESSAGE value="@BeforeEach added" />
     <option name="LAST_COMMIT_MESSAGE" value="@BeforeEach added" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/netology/afisha/Poster.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

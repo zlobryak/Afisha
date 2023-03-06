@@ -30,9 +30,17 @@ public class Poster {
   }
 
   public PosterItem[] findLast() {
-    PosterItem[] tmp = new PosterItem[resultLenght];
-    for (int i = 0; i < resultLenght; i++) {
-      tmp[i] = items[resultLenght - i - 1];
+    int tmpLenght;
+
+    if (resultLenght <= items.length) {
+      tmpLenght = resultLenght;
+    } else {
+      tmpLenght = items.length;
+    }
+
+    PosterItem[] tmp = new PosterItem[tmpLenght];
+    for (int i = 0; i < tmpLenght; i++) {
+      tmp[i] = items[tmpLenght - i - 1];
     }
     return tmp;
   }
