@@ -8,8 +8,7 @@ public class PosterManager {
   }
 
   public PosterItem[] findAll() {
-    PosterItem[] tmp = repo.findAll();
-    return tmp;
+    return repo.findAll();
   }
 
   public void save(PosterItem item) {
@@ -17,12 +16,19 @@ public class PosterManager {
   }
 
   public PosterItem findById(int id) {
-    PosterItem item = repo.findById(id);
-    return item;
+    PosterItem[] items = repo.findAll();
+    PosterItem desiredItem = null;
+    for (PosterItem item : items) {
+      if (item.getId() == id) {
+        desiredItem = item;
+      }
+    }
+    return desiredItem;
   }
 
+
   public void removeById(int id) {
-    repo.findById(id);
+    repo.removeById(id);
   }
 
   public void removeAll() {

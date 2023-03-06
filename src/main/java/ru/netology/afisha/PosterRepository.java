@@ -38,7 +38,7 @@ public class PosterRepository {
     }
 
     public PosterItem findById(int id) {
-        PosterItem desiredItem = null;
+        PosterItem desiredItem = null;   //Relocated to PosterManager for Mock test
         for (PosterItem item : items) {
             if (item.getId() == id) {
                 desiredItem = item;
