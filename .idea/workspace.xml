@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c9bcf99-28ca-447a-8f09-fda9ed82d6be" name="Changes" comment="Coveredratio for jacoco set to 100%&#10;All test done.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/netology/afisha/PosterItemTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="4c9bcf99-28ca-447a-8f09-fda9ed82d6be" name="Changes" comment="@BeforeEach added">
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/afisha/Poster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/afisha/Poster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/afisha/PosterItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/afisha/PosterItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/afisha/PosterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/afisha/PosterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,19 +40,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_directory_selection": "D:/Netology/Java/Afisha/src/main/java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "Errors"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_directory_selection&quot;: &quot;D:/Netology/Java/Afisha/src/main/java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -70,7 +66,7 @@
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PosterItemTest.getReleaseYearTest">
+  <component name="RunManager" selected="JUnit.PosterRepositoryTest.findLastTest">
     <configuration name="PosterItemTest.getReleaseYearTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Javaqamvn" />
       <extension name="coverage">
@@ -103,7 +99,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PosterTest.addPosterItemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PosterRepositoryTest.findAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Javaqamvn" />
       <extension name="coverage">
         <pattern>
@@ -112,14 +108,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.afisha" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterTest" />
-      <option name="METHOD_NAME" value="addPosterItemTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterRepositoryTest" />
+      <option name="METHOD_NAME" value="findAllTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PosterTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PosterRepositoryTest.findLastAnotherLenghtTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Javaqamvn" />
       <extension name="coverage">
         <pattern>
@@ -128,14 +124,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.afisha" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterTest" />
-      <option name="METHOD_NAME" value="findAll" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterRepositoryTest" />
+      <option name="METHOD_NAME" value="findLastAnotherLenghtTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PosterTest.findLastTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PosterRepositoryTest.findLastTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Javaqamvn" />
       <extension name="coverage">
         <pattern>
@@ -144,20 +140,33 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.afisha" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.afisha.PosterRepositoryTest" />
       <option name="METHOD_NAME" value="findLastTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Javaqamvn" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Javaqamvn" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PosterRepositoryTest.findLastTest" />
+        <item itemvalue="JUnit.PosterRepositoryTest.findAllTest" />
+        <item itemvalue="JUnit.PosterRepositoryTest.findLastAnotherLenghtTest" />
         <item itemvalue="JUnit.PosterItemTest.getReleaseYearTest" />
         <item itemvalue="JUnit.PosterItemTest.setFilmNameTest" />
-        <item itemvalue="JUnit.PosterTest.findLastTest" />
-        <item itemvalue="JUnit.PosterTest.addPosterItemTest" />
-        <item itemvalue="JUnit.PosterTest.findAll" />
       </list>
     </recent_temporary>
   </component>
@@ -210,6 +219,7 @@
     <MESSAGE value="AddPoster and test for it" />
     <MESSAGE value="Coveredratio for jacoco set to 10%" />
     <MESSAGE value="Coveredratio for jacoco set to 100%&#10;All test done." />
-    <option name="LAST_COMMIT_MESSAGE" value="Coveredratio for jacoco set to 100%&#10;All test done." />
+    <MESSAGE value="@BeforeEach added" />
+    <option name="LAST_COMMIT_MESSAGE" value="@BeforeEach added" />
   </component>
 </project>

@@ -7,6 +7,7 @@ public class Poster {
   public int getResultLenght() {
     return resultLenght;
   }
+
   public Poster(int resultLenght) {
     if (resultLenght > 0) {
       this.resultLenght = resultLenght;
@@ -15,7 +16,7 @@ public class Poster {
     }
   }
 
-  public void addPosterItem(PosterItem item) {
+  public void save(PosterItem item) {
     PosterItem[] tmp = new PosterItem[items.length + 1];
     for (int i = 0; i < items.length; i++) {
       tmp[i] = items[i];

@@ -1,10 +1,11 @@
 package ru.netology.afisha;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class PosterTest {
-  Poster poster = new Poster(10);
+class PosterRepositoryTest {
+  Poster repo = new Poster(10);
   PosterItem item1 = new PosterItem(1, "Спайдерхед", 2022);
   PosterItem item2 = new PosterItem(2, "Властелин колец 3: Возвращение Короля", 2003);
   PosterItem item3 = new PosterItem(3, "Терминатор 2: Судный день", 1991);
@@ -19,45 +20,65 @@ class PosterTest {
   PosterItem item12 = new PosterItem(12, "Матрица ", 1999);
   PosterItem item13 = new PosterItem(13, "Крестный отец", 1972);
 
+  @BeforeEach
+  public void setup() {
+    repo.save(item1);
+    repo.save(item2);
+    repo.save(item3);
+    repo.save(item4);
+    repo.save(item5);
+    repo.save(item6);
+    repo.save(item7);
+    repo.save(item8);
+    repo.save(item9);
+    repo.save(item10);
+    repo.save(item11);
+    repo.save(item12);
+    repo.save(item13);
+  }
 
   @Test
-  void addPosterItemTest() {
-    poster.addPosterItem(item1);
-    poster.addPosterItem(item2);
-    poster.addPosterItem(item3);
+  void findAllTest() {
 
-    PosterItem[] expected = {item1, item2, item3};
-    PosterItem[] actual = poster.findAll();
+    PosterItem[] expected = {item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, item12, item13};
+    PosterItem[] actual = repo.findAll();
 
     Assertions.assertArrayEquals(expected, actual);
   }
 
   @Test
   void findLastTest() {
-    poster.addPosterItem(item1);
-    poster.addPosterItem(item2);
-    poster.addPosterItem(item3);
-    poster.addPosterItem(item4);
-    poster.addPosterItem(item5);
-    poster.addPosterItem(item6);
-    poster.addPosterItem(item7);
-    poster.addPosterItem(item8);
-    poster.addPosterItem(item9);
-    poster.addPosterItem(item10);
-    poster.addPosterItem(item11);
-    poster.addPosterItem(item12);
-    poster.addPosterItem(item13);
-
-
     PosterItem[] expected = {item10, item9, item8, item7, item6, item5, item4, item3, item2, item1};
-    PosterItem[] actual = poster.findLast();
+    PosterItem[] actual = repo.findLast();
+
+    Assertions.assertArrayEquals(expected, actual);
+  }
+
+  @Test
+  void findLastAnotherLenghtTest() {
+    Poster repo = new Poster(11);
+    repo.save(item1);
+    repo.save(item2);
+    repo.save(item3);
+    repo.save(item4);
+    repo.save(item5);
+    repo.save(item6);
+    repo.save(item7);
+    repo.save(item8);
+    repo.save(item9);
+    repo.save(item10);
+    repo.save(item11);
+    repo.save(item12);
+    repo.save(item13);
+    PosterItem[] expected = {item11, item10, item9, item8, item7, item6, item5, item4, item3, item2, item1};
+    PosterItem[] actual = repo.findLast();
 
     Assertions.assertArrayEquals(expected, actual);
   }
 
   @Test
   void getResultLenght() {
-    Assertions.assertEquals(10, poster.getResultLenght());
+    Assertions.assertEquals(10, repo.getResultLenght());
   }
 
   @Test
@@ -65,4 +86,5 @@ class PosterTest {
     Poster poster = new Poster(-1);
     Assertions.assertEquals(10, poster.getResultLenght());
   }
+
 }
