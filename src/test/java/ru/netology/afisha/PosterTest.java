@@ -20,7 +20,7 @@ class PosterRepositoryTest {
   PosterItem item13 = new PosterItem(13, "Крестный отец", 1972);
 
   @Test
-  void findAllTest() {
+  void findAllTest() { //Вывод всех хранмых в репозитории значений
     repo.save(item1);
     repo.save(item2);
     repo.save(item3);
@@ -42,7 +42,7 @@ class PosterRepositoryTest {
   }
 
   @Test
-  void findLastTestWhenMoreItems() {
+  void findLastTestWhenMoreItems() { // для случаев, когда в репозитории фильмов мбольше лимита.
     repo.save(item1);
     repo.save(item2);
     repo.save(item3);
@@ -63,7 +63,7 @@ class PosterRepositoryTest {
   }
 
   @Test
-  void findLastTestWhenLessItems() {
+  void findLastTestWhenLessItems() { //для случаев, когда фильмов в репозитории меньше лимита.
     Poster repo = new Poster(10); //Создаем репозиторий со стандартным числом последних фильмов 10
     repo.save(item1);
     repo.save(item2);
@@ -81,15 +81,14 @@ class PosterRepositoryTest {
   }
 
   @Test
-  void findLastWhenNoItemsTest() {
+  void findLastWhenNoItemsTest() { // для пустого репозитория
     Poster repo = new Poster(10);
     PosterItem[] expected = new PosterItem[0];
     Assertions.assertArrayEquals(expected, repo.findLast());
   }
 
   @Test
-  void findLastWhenEquals() {
-    Poster repo = new Poster(10);
+  void findLastWhenEquals() { // для количества фильмов, совпадающего с лимитом.
     repo.save(item1);
     repo.save(item2);
     repo.save(item3);
@@ -105,7 +104,7 @@ class PosterRepositoryTest {
   }
 
   @Test
-  void findLastAnotherLenghtTest() {
+  void findLastAnotherLenghtTest() { //Для нестандартного лимита
     Poster repo = new Poster(11);
     repo.save(item1);
     repo.save(item2);
@@ -129,10 +128,10 @@ class PosterRepositoryTest {
   @Test
   void getResultLenght() {
     Assertions.assertEquals(10, repo.getResultLenght());
-  }
+  } //Тет геттера для переменной лимита
 
   @Test
-  void resultLenghtBelowTest() {
+  void resultLenghtBelowTest() { // Тест конструктора на отрицательные значения лимита
     Poster poster = new Poster(-1);
     Assertions.assertEquals(10, poster.getResultLenght());
   }
