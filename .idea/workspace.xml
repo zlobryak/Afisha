@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c9bcf99-28ca-447a-8f09-fda9ed82d6be" name="Changes" comment="When less and when no items tests added." />
+    <list default="true" id="4c9bcf99-28ca-447a-8f09-fda9ed82d6be" name="Changes" comment="When less and when no items tests added.">
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/afisha/PosterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/afisha/PosterTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
