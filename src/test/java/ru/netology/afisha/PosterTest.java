@@ -3,7 +3,7 @@ package ru.netology.afisha;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class PosterRepositoryTest {
+class PosterTest {
   Poster repo = new Poster(10);
   PosterItem item1 = new PosterItem(1, "Спайдерхед", 2022);
   PosterItem item2 = new PosterItem(2, "Властелин колец 3: Возвращение Короля", 2003);
@@ -42,7 +42,7 @@ class PosterRepositoryTest {
   }
 
   @Test
-  void findLastTestWhenMoreItems() { // для случаев, когда в репозитории фильмов мбольше лимита.
+  void findLastTestWhenMoreItems() { // для случаев, когда в репозитории фильмов больше лимита.
     repo.save(item1);
     repo.save(item2);
     repo.save(item3);
@@ -56,7 +56,7 @@ class PosterRepositoryTest {
     repo.save(item11);
     repo.save(item12);
     repo.save(item13);
-    PosterItem[] expected = {item10, item9, item8, item7, item6, item5, item4, item3, item2, item1};
+    PosterItem[] expected = {item13, item12, item11, item10, item9, item8, item7, item6, item5, item4};
     PosterItem[] actual = repo.findLast();
 
     Assertions.assertArrayEquals(expected, actual);
