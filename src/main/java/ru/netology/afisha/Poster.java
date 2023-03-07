@@ -40,7 +40,7 @@ public class Poster {
 
     PosterItem[] tmp = new PosterItem[tmpLenght];
     for (int i = 0; i < tmpLenght; i++) {
-      tmp[i] = items[tmpLenght - i - 1];
+      tmp[i] = items[items.length - i - 1];
     }
     return tmp;
   }

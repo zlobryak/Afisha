@@ -118,8 +118,8 @@ class PosterRepositoryTest {
     repo.save(item10);
     repo.save(item11);
     repo.save(item12);
-    repo.save(item13);
-    PosterItem[] expected = {item11, item10, item9, item8, item7, item6, item5, item4, item3, item2, item1};
+    repo.save(item13); //Заадаем 13 итемов, что больше лимита (11)
+    PosterItem[] expected = {item13, item12, item11, item10, item9, item8, item7, item6, item5, item4, item3};
     PosterItem[] actual = repo.findLast();
 
     Assertions.assertArrayEquals(expected, actual);
